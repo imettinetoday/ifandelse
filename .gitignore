@@ -20,7 +20,7 @@ public class IfandElse {
         String message;
         
         // get the age from the enduser
-        personage = Integer.parseInt(JOptionPane.showInputDialog("How old are you?"));
+        personage = Integer.parseInt(JOptionPane.showInputDialog("What is Your Age?"));
         
         // determine the appropriate message to display
         message = "";
@@ -31,11 +31,11 @@ public class IfandElse {
         
         if (personage > 16)
         {
-            message +="Excellent, you are old enought to get your licence.";
+            message +="Great, You are qualified to get your licence.";
         }
         else
         {
-            message +="That's a shame, you are not old enough to get your licence.";
+            message +="Im sorry, You are not qualified to get your licence at your age.";
         }
         
         // output the message to the end-user
