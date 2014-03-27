@@ -1,6 +1,44 @@
-*.class
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ifandelse;
+import javax.swing.*;
 
-# Package Files #
-*.jar
-*.war
-*.ear
+/**
+ *
+ * @author 041402493
+ */
+public class IfandElse {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // setup the variables
+        int personage;
+        String message;
+        
+        // get the age from the enduser
+        personage = Integer.parseInt(JOptionPane.showInputDialog("How old are you?"));
+        
+        // determine the appropriate message to display
+        message = "";
+        if(personage >= 18)
+        {
+            message = "You are an adult!\n";
+        }
+        
+        if (personage > 16)
+        {
+            message +="Excellent, you are old enought to get your licence.";
+        }
+        else
+        {
+            message +="That's a shame, you are not old enough to get your licence.";
+        }
+        
+        // output the message to the end-user
+        JOptionPane.showMessageDialog(null, message, "Licence", JOptionPane.INFORMATION_MESSAGE);
+    }
+}
